@@ -1,0 +1,20 @@
+footer {
+  color: white;
+  font-family: 'rubikregular', 'Open sans Hebrew', arial, helvetica, sans-serif;
+  font-size: 13px;
+
+  //footer should be at the bottom of the page
+  position: absolute;
+  z-index: 500;
+  bottom: 0;
+  width: 100%;
+
+  //text should be aligned by center
+  p {
+    text-align: center;
+
+    i {
+      font-family: 'rubikitalic', 'Open sans Hebrew', arial, helvetica, sans-serif;
+    }
+  }
+}

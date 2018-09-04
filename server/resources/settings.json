@@ -1,0 +1,8 @@
+{
+  "server_port": 49152,
+  "pool_open_status": "פתוחה",
+  "gym_open_status": "פתוח",
+  "pool_closed_status": "סגורה",
+  "gym_closed_status": "סגור",
+  "pool_next_year": "העונה נגמרה נתראה שנה הבאה!"
+}

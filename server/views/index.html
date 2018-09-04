@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>זמן צמרות - שעות הפתיחה והסגירה של חדר הכושר והבריכה</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Eyal Benvenisti">
+    <meta name="descripation" content="">
+
+    <!-- Connect our stylesheets -->
+
+    <link rel="stylesheet" href="css/vendors/swiper.min.css"> <!-- Third-party library for creating a swiper-component on the page -->
+    <link rel="stylesheet" href="css/base.css">
+
+    <!-- Add favicon -->
+    <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+   <main class="swiper-container">
+       <footer>
+           <p>Made with <i class="">Love</i> | Eyal </p>
+       </footer>
+
+       <div class="swiper-wrapper">
+           <div class="swiper-slide p2r default pool">
+                <div class="content-block">
+                <!-- Currently Pool is -->
+                     <p class="intro-text">כרגע, <br> הבריכה </p>
+                <!-- Current status -->
+                     <div class="status">
+                          <span class='{{poolStatusBackground}} element-open'>{{poolStatus}}</span>
+                          <img src={{poolStatusImage}}>
+                          <p class="black-background">{{poolStatusInfo}}</p>
+                     </div>
+                <!-- Special Meassage -->
+                     <p class="final-text {{poolSpecialMessageBackground}}">{{poolSpecialMessage}}</p>
+                </div>
+           </div>
+
+           <div class="swiper-slide p2r default gym">
+                <div class="content-block">
+                <!-- Currently Gym is -->
+                     <p class="intro-text">כרגע, <br> החדר כושר </p>
+                <!-- Current status -->
+                     <div class="status">
+                          <span class='{{gymStatusBackground}} element-open'>{{gymStatus}}</span>
+                          <img src={{gymStatusImage}}>
+                          <p class="black-background">{{gymStatusInfo}}</p>
+                     </div>
+                <!-- Special Meassage -->
+                     <p class="final-text {{gymSpecialMessageBackground}}">{{gymSpecialMessage}}</p>
+           </div>
+       </div>
+   </main>
+
+    <!-- Add all our scripts -->
+    <script src="js/vendors/swiper.min.js"></script>  <!-- Third-party library for creating a swiper-component on the page -->
+    <script src="js/vendors/jquery-3.2.1.min.js"></script>
+    <script src="js/vendors/jquery.p2r.min.js"></script>
+    <script src="js/main.js"></script> <!-- Our main javascript file -->
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js -->
+
+
+   <!-- Start of Woopra Code -->
+   <script>
+       (function(){
+           var t,i,e,n=window,o=document,a=arguments,s="script",r=["config","track","identify","visit","push","call","trackForm","trackClick"],c=function(){var t,i=this;for(i._e=[],t=0;r.length>t;t++)(function(t){i[t]=function(){return i._e.push([t].concat(Array.prototype.slice.call(arguments,0))),i}})(r[t])};for(n._w=n._w||{},t=0;a.length>t;t++)n._w[a[t]]=n[a[t]]=n[a[t]]||new c;i=o.createElement(s),i.async=1,i.src="//static.woopra.com/js/w.js",e=o.getElementsByTagName(s)[0],e.parentNode.insertBefore(i,e)
+       })("woopra");
+
+       woopra.config({
+           domain: 'zamaroot.com'
+       });
+       woopra.track();
+   </script>
+   <!-- End of Woopra Code -->
+
+</body>
+</html>

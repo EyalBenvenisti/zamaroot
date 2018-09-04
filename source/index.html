@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zamaroot - facilities opening hours</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Eyal Benvenisti">
+    <meta name="descripation" content="">
+
+    <!-- Connect our stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/vendors/swiper.min.css"> <!-- Third-party library for creating a swiper-component on the page -->
+    <link rel="stylesheet" href="css/base.css">
+
+    <!-- Add favicon -->
+    <link rel="shortcut icon" href="images/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/icons/favicon.ico" type="image/x-icon">
+</head>
+<body>
+   <main class="swiper-container">
+        <footer>
+                   <p>Built with <i class="">Love</i> by Eyal Benvenisti </p>
+               </footer>
+
+       <div class="swiper-wrapper">
+           <div class="swiper-slide p2r default pool">
+                <div class="content-block">
+                <!-- Currently, Pool is -->
+                     <p class="intro-text">Currently <br> Pool is</p>
+                <!-- Current status -->
+                     <div class="open-status">
+                          <span class='green-background'>Open</span>
+                          <img class="open-pool" src='images/content/waves.png'>
+                          <p class="black-background">Open until 2:00 pm</p>
+                     </div>
+                <!-- Special Meassage -->
+                     <p class="final-text  black-background">Today is 12/06/2017</p>
+                </div>
+           </div>
+
+           <div class="swiper-slide p2r default gym">
+                <div class="content-block">
+                <!-- Currently, Gym is -->
+                     <p class="intro-text">Currently <br> Gym is</p>
+                <!-- Current status -->
+                     <div class="closed-status">
+                          <span class='red-background'>Closed</span>
+                          <img class="closed-gym" src='images/content/no-gym.png'>
+                          <p class="black-background">Next Opening 15/06/2017 2:00 pm</p>
+                     </div>
+                <!-- Special Meassage -->
+                     <p class="final-text  black-background">Today is {{}}</p>
+           </div>
+       </div>
+
+
+   </main>
+
+    <!-- Add all our scripts -->
+    <script src="js/vendors/swiper.min.js"></script>  <!-- Third-party library for creating a swiper-component on the page -->
+    <script src="js/vendors/jquery-3.2.1.min.js"></script>
+    <script src="js/vendors/jquery.p2r.min.js"></script>
+    <script src="js/main.js"></script> <!-- Our main javascript file -->
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js -->
+
+
+</body>
+</html>
